@@ -55,6 +55,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+    $routes->connect('/invoices/index', ['controller' => 'Invoices', 'action' => 'index']);
     /**
      * Connect catchall routes for all controllers.
      *
@@ -72,6 +73,11 @@ Router::scope('/', function (RouteBuilder $routes) {
      * routes you want in your application.
      */
     $routes->fallbacks('DashedRoute');
+});
+
+Router::scope('/invoices/', function (\Cake\Routing\RouteBuilder $routes) {
+    $routes->addExtensions(['pdf']);
+    // ...
 });
 
 /**
