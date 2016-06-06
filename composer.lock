@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8c8eee0878b0852c6d5651b334b36d7f",
-    "content-hash": "601fb31c8d0d4504a213a0c837654da4",
+    "hash": "79964b9743cfc97e43d54030acaab259",
+    "content-hash": "8e4b0600c68a0473416b973ffdcf578a",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -342,6 +342,90 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2016-04-28 03:01:34"
+        },
+        {
+            "name": "friendsofcake/cakepdf",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/CakePdf.git",
+                "reference": "d112b1cac8173b46d10286dcfb037234b1e94b3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/CakePdf/zipball/d112b1cac8173b46d10286dcfb037234b1e94b3b",
+                "reference": "d112b1cac8173b46d10286dcfb037234b1e94b3b",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.1",
+                "php": ">=5.4.16"
+            },
+            "replace": {
+                "ceeram/cakepdf": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "dompdf/dompdf": "If you wish to use the DomPdf engine",
+                "mpdf/mpdf": "If you wish to use the Mpdf engine",
+                "tecnick.com/tcpdf": "If you wish to use the Tcpdf engine"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "CakePdf\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CakePHP plugin for creating and/or rendering Pdfs, several Pdf engines supported.",
+            "homepage": "http://github.com/friendsofcake/CakePdf",
+            "time": "2016-04-14 17:55:53"
+        },
+        {
+            "name": "holt59/cakephp3-bootstrap-helpers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Holt59/cakephp3-bootstrap-helpers.git",
+                "reference": "514266d8845f3338c4dbceb4ff20c74b076115fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Holt59/cakephp3-bootstrap-helpers/zipball/514266d8845f3338c4dbceb4ff20c74b076115fe",
+                "reference": "514266d8845f3338c4dbceb4ff20c74b076115fe",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": ">=3.2.3"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bootstrap\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "description": "Bootstrap Helpers for CakePHP 3.0",
+            "keywords": [
+                "bootstrap",
+                "cakephp"
+            ],
+            "time": "2016-04-23 21:52:39"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -765,6 +849,69 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-05-26 21:46:24"
+        },
+        {
+            "name": "tecnickcom/tcpdf",
+            "version": "6.2.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/TCPDF.git",
+                "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/2f732eaa91b5665274689b1d40b285a7bacdc37f",
+                "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "fonts",
+                    "config",
+                    "include",
+                    "tcpdf.php",
+                    "tcpdf_parser.php",
+                    "tcpdf_import.php",
+                    "tcpdf_barcodes_1d.php",
+                    "tcpdf_barcodes_2d.php",
+                    "include/tcpdf_colors.php",
+                    "include/tcpdf_filters.php",
+                    "include/tcpdf_font_data.php",
+                    "include/tcpdf_fonts.php",
+                    "include/tcpdf_images.php",
+                    "include/tcpdf_static.php",
+                    "include/barcodes/datamatrix.php",
+                    "include/barcodes/pdf417.php",
+                    "include/barcodes/qrcode.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "homepage": "http://nicolaasuni.tecnick.com"
+                }
+            ],
+            "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+            "homepage": "http://www.tcpdf.org/",
+            "keywords": [
+                "PDFD32000-2008",
+                "TCPDF",
+                "barcodes",
+                "datamatrix",
+                "pdf",
+                "pdf417",
+                "qrcode"
+            ],
+            "time": "2015-09-12 10:08:34"
         }
     ],
     "packages-dev": [
@@ -1230,6 +1377,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "holt59/cakephp3-bootstrap-helpers": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,
