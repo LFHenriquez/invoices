@@ -55,7 +55,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
-    $routes->connect('/invoices/index', ['controller' => 'Invoices', 'action' => 'index']);
+    $routes->connect('/invoices/', ['controller' => 'Invoices', 'action' => 'index']);
     /**
      * Connect catchall routes for all controllers.
      *
