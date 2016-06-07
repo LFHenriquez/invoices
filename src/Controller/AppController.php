@@ -33,7 +33,8 @@ class AppController extends Controller
             'className' => 'Bootstrap.BootstrapHtml'
         ],
         'Form' => [
-            'className' => 'Bootstrap.BootstrapForm'
+            'className' => 'Bootstrap.BootstrapForm',
+            'useCustomFileInput' => true
         ],
         'Paginator' => [
             'className' => 'Bootstrap.BootstrapPaginator'

@@ -9,7 +9,12 @@
         "cakephp/cakephp": "~3.2",
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
-        "cakephp/plugin-installer": "*"
+        "cakephp/plugin-installer": "*",
+        "friendsofcake/CakePdf": "^3.2",
+        "tecnickcom/tcpdf": "^6.2",
+        "holt59/cakephp3-bootstrap-helpers": "dev-master",
+        "google/apiclient": "^2.0.0@RC",
+        "asimlqt/php-google-spreadsheet-client": "^2.3"
     },
     "require-dev": {
         "psy/psysh": "@stable",
@@ -22,7 +27,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src"
+            "App\\": "src",
+	    "Google\\": "./vendor/google/apiclient"
         }
     },
     "autoload-dev": {

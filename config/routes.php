@@ -40,6 +40,9 @@ use Cake\Routing\Router;
  * `:action` markers.
  *
  */
+
+//Router::extensions(['pdf']);
+
 Router::defaultRouteClass('DashedRoute');
 
 Router::scope('/', function (RouteBuilder $routes) {
@@ -55,7 +58,11 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
-    $routes->connect('/invoices/', ['controller' => 'Invoices', 'action' => 'index']);
+    //$routes->connect('/invoices/', ['controller' => 'Invoices', 'action' => 'index']);
+
+    $routes->extensions(['pdf']);
+    $routes->resources('Invoices');
+
     /**
      * Connect catchall routes for all controllers.
      *
@@ -73,11 +80,6 @@ Router::scope('/', function (RouteBuilder $routes) {
      * routes you want in your application.
      */
     $routes->fallbacks('DashedRoute');
-});
-
-Router::scope('/invoices/', function (\Cake\Routing\RouteBuilder $routes) {
-    $routes->addExtensions(['pdf']);
-    // ...
 });
 
 /**
