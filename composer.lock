@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f83ce56e7c28695335f07db5aef7b571",
-    "content-hash": "dc3995f6904fc650e11f7cdb2d8297ab",
+    "hash": "c8ac93517571ad33439c448979bed1a5",
+    "content-hash": "49f944e1655026966b2a8d3b17962c70",
     "packages": [
         {
             "name": "arkhan/google-auth",
@@ -13,19 +13,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LFHenriquez/GoogleAuth.git",
-                "reference": "734699651c1226cd94221e7f48dc51b7e2c28c92"
+                "reference": "08c359568fb6758a65e9fee4ac5a3dc0672fb920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LFHenriquez/GoogleAuth/zipball/734699651c1226cd94221e7f48dc51b7e2c28c92",
-                "reference": "734699651c1226cd94221e7f48dc51b7e2c28c92",
+                "url": "https://api.github.com/repos/LFHenriquez/GoogleAuth/zipball/08c359568fb6758a65e9fee4ac5a3dc0672fb920",
+                "reference": "08c359568fb6758a65e9fee4ac5a3dc0672fb920",
                 "shasum": ""
             },
             "require": {
                 "google/apiclient": "^2.0.0@RC",
                 "php": ">=5.6.0"
             },
-            "type": "library",
+            "type": "cakephp-plugin",
             "autoload": {
                 "psr-4": {
                     "GoogleAuth\\": "src"
@@ -46,7 +46,49 @@
             "keywords": [
                 "google"
             ],
-            "time": "2016-06-11 18:38:05"
+            "time": "2016-06-11 21:09:46"
+        },
+        {
+            "name": "arkhan/google-spreadsheets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LFHenriquez/spreadsheets.git",
+                "reference": "b7205a7fe1edcbe3986715430ba9f57dab89856a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LFHenriquez/spreadsheets/zipball/b7205a7fe1edcbe3986715430ba9f57dab89856a",
+                "reference": "b7205a7fe1edcbe3986715430ba9f57dab89856a",
+                "shasum": ""
+            },
+            "require": {
+                "arkhan/google-auth": ">=1.0",
+                "google/apiclient": "^2.0.0@RC",
+                "php": ">=5.6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Spreadsheets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leonard Henriquez",
+                    "email": "leonard.henriquez@edhec.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google PHP Client",
+            "keywords": [
+                "google"
+            ],
+            "time": "2016-06-12 00:13:18"
         },
         {
             "name": "aura/installer-default",
@@ -2042,6 +2084,7 @@
         "holt59/cakephp3-bootstrap-helpers": 20,
         "google/apiclient": 5,
         "arkhan/google-auth": 20,
+        "arkhan/google-spreadsheets": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,
