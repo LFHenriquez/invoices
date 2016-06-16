@@ -1,0 +1,2 @@
+<p>test template</p>
+<?= $this->fetch('content') ?>

@@ -1,5 +1,6 @@
 /.git/
-/vendor/*
 /config/app.php
+/config/google.php
+/config/*.json
 /tmp/*
 /logs/*
