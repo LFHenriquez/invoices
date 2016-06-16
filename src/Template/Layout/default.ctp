@@ -23,12 +23,14 @@ $cakeDescription = 'Générateur de factures';
     <title>
         <?= $this->fetch('title') ?>
     </title>
+    <?= $this->fetch('meta') ?>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('bootstrap.css') ?>
+    <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('custom.css') ?>
 
-    <?= $this->fetch('meta') ?>
+    <?= $this->Html->script('jquery.min.js') ?>
+    <?= $this->Html->script('bootstrap.min.js') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
